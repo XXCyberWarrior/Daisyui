@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
         tailwind.config = {
           theme: {
             extend: {
-              BackgroundImage: {
-                'hero-bg': "url('./images/yellow-bg.jpg')",
-              }
+            backgroundImage: {
+                'hero-bg':"url('./images/yellow-bg.jpg')",
+            }
             }
           }
         }
@@ -67,7 +67,7 @@
         </nav>
         <!-- end navber section -->
         <!-- Start Banner Section  -->
-        <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+        <div class="hero min-h-[calc(100vh-66px)]" style=" background-image: url(./assest/images/yellow-bg.jpg);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
@@ -79,8 +79,54 @@
             </div>
           </div>
     </header>
+    <!-- Header Section End -->
     <main>
-        
+        <!-- Catagories Sections  -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <!-- Heading -->
+            <div class="text-center pb-5">
+                <h1 class="text-2xl md:text-4xl">Huge Collection</h1>
+                <p class="text-xm">Browse from a various collections</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                <div>
+                    <div class="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="./assest/images/shoes.avif" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="./assest/images/shoes.avif" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="./assest/images/shoes.avif" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Shoes!</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
